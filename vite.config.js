@@ -73,9 +73,10 @@ export default defineConfig({
           esModule: true,
           resolveStyle: name => {
             if (name !== "el-message" && name !== "el-notification") {
-              // 有些组件按需引入有bug，这里过滤一下，从main.js引入对应的样式表。
+              // 有些组件按需引入有bug，这里过滤一下，
               return `element-plus/lib/theme-chalk/${name}.css`;
             } else {
+              //从main.js引入对应的样式表(样式显示有问题，暂时改成引入index.css)。
               return `element-plus/theme-chalk/index.css`;
             }
           },

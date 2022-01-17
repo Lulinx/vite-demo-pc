@@ -1,7 +1,7 @@
 <!--
  * @Author: ws
  * @Date: 2022-01-17 08:56:49
- * @LastEditTime: 2022-01-17 17:20:24
+ * @LastEditTime: 2022-01-17 17:59:00
  * @LastEditors: ws
  * @Description: 
  * @FilePath: \myDemo\vite-demo-pc\src\shop\components\shop\index.vue
@@ -37,6 +37,7 @@ import { readonly, ref } from "@vue/reactivity";
 import { onMounted, watch } from "@vue/runtime-core";
 import { useRouter } from "vue-router";
 import { searchDreamDetail } from "@/api/api";
+import { mathJsCalc } from "@/utils/extend.js";
 let loading = ref(false);
 const router = useRouter();
 let count = ref(0);
@@ -74,6 +75,7 @@ const planObj = { count: 12 };
 const rnPlanObj = readonly(planObj);
 const numberAdd = () => {
   planObj.count += 888;
+  console.log(mathJsCalc([100, 13], "/"));
   return count.value++;
 };
 const getData = () => {

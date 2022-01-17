@@ -1,7 +1,7 @@
 /*
  * @Author: ws
  * @Date: 2022-01-17 08:56:49
- * @LastEditTime: 2022-01-17 16:39:32
+ * @LastEditTime: 2022-01-17 17:20:10
  * @LastEditors: ws
  * @Description: 此文件用于存放公共方法API
  * @FilePath: \myDemo\vite-demo-pc\src\utils\extend.js

@@ -1,7 +1,7 @@
 <!--
  * @Author: ws
  * @Date: 2022-01-17 08:56:49
- * @LastEditTime: 2022-01-17 16:13:35
+ * @LastEditTime: 2022-01-17 17:20:24
  * @LastEditors: ws
  * @Description: 
  * @FilePath: \myDemo\vite-demo-pc\src\shop\components\shop\index.vue
@@ -34,7 +34,7 @@
 <script setup>
 import { MoreFilled } from "@element-plus/icons-vue";
 import { readonly, ref } from "@vue/reactivity";
-import { watch } from "@vue/runtime-core";
+import { onMounted, watch } from "@vue/runtime-core";
 import { useRouter } from "vue-router";
 import { searchDreamDetail } from "@/api/api";
 let loading = ref(false);

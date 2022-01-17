@@ -1,10 +1,10 @@
 <!--
  * @Author: ws
  * @Date: 2022-01-17 08:56:49
- * @LastEditTime: 2022-01-17 17:59:00
+ * @LastEditTime: 2022-01-17 20:10:11
  * @LastEditors: ws
  * @Description: 
- * @FilePath: \myDemo\vite-demo-pc\src\shop\components\shop\index.vue
+ * @FilePath: \vite-demo-pc\src\shop\components\shop\index.vue
 -->
 <template>
   <div class="block">
@@ -37,7 +37,7 @@ import { readonly, ref } from "@vue/reactivity";
 import { onMounted, watch } from "@vue/runtime-core";
 import { useRouter } from "vue-router";
 import { searchDreamDetail } from "@/api/api";
-import { mathJsCalc } from "@/utils/extend.js";
+import { mathJsCalc,dateFormat } from "@/utils/extend.js";
 let loading = ref(false);
 const router = useRouter();
 let count = ref(0);
@@ -76,6 +76,8 @@ const rnPlanObj = readonly(planObj);
 const numberAdd = () => {
   planObj.count += 888;
   console.log(mathJsCalc([100, 13], "/"));
+  console.log(dateFormat(new Date().getTime(), "YYYY-MM-DD HH:mm:ss"));
+  
   return count.value++;
 };
 const getData = () => {

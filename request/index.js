@@ -1,3 +1,11 @@
+/*
+ * @Author: ws
+ * @Date: 2022-01-17 08:56:49
+ * @LastEditTime: 2022-01-17 14:30:58
+ * @LastEditors: ws
+ * @Description: 
+ * @FilePath: \myDemo\vite-demo-pc\request\index.js
+ */
 import axios from 'axios';
 // 引入公共函数js文件
 import { showToast } from "@/utils/extend.js";
@@ -31,11 +39,11 @@ axios.interceptors.response.use((result) => {
     if (result.data.result && result.data.statusCode == "000000") {
       return Promise.resolve(result);
     } else {
-      showToast(result.data.desc || "操作失败");
+      showToast("error", result.data.desc || "操作失败");
       return Promise.reject(result);
     }
   } else {
-    showToast("网络异常");
+    showToast("error", "网络异常");
     return Promise.reject(result);
   }
 }, (err) => {

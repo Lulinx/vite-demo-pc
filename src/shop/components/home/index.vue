@@ -8,7 +8,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const { proxy } = getCurrentInstance();
 const click = () => {
-  proxy.$toast("success", "this is a message.");
+  proxy.$toast("success","this is a message.");
   setTimeout(() => {
     router.push({
       name: "shop",

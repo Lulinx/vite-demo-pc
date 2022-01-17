@@ -1,0 +1,26 @@
+{
+  "name": "vite-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "qs": "^6.10.3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "amfe-flexible": "^2.2.1",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "postcss-pxtorem": "^6.0.0",
+    "vant": "^3.4.1",
+    "vite": "^2.7.2",
+    "vite-plugin-components": "^0.13.3",
+    "vite-plugin-style-import": "^1.4.1"
+  }
+}

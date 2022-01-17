@@ -1,3 +1,11 @@
+/*
+ * @Author: ws
+ * @Date: 2022-01-17 08:56:49
+ * @LastEditTime: 2022-01-17 16:08:54
+ * @LastEditors: ws
+ * @Description: 前端用于测试的mock数据文件
+ * @FilePath: \myDemo\vite-demo-pc\mock\mock.js
+ */
 const mockData = {
     "dogFamily": {
         "statusCode": "000000",
@@ -27,6 +35,6 @@ export default (key) => {
     return new Promise(res => {
         setTimeout(() => {
             res(mockData[key])
-        }, 1000);
+        }, 2000);
     })
 }

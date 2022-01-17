@@ -1,7 +1,7 @@
 /*
  * @Author: ws
  * @Date: 2022-01-17 08:56:49
- * @LastEditTime: 2022-01-17 20:15:47
+ * @LastEditTime: 2022-01-17 20:21:18
  * @LastEditors: ws
  * @Description: 此文件用于存放公共方法API
  * @FilePath: \vite-demo-pc\src\utils\extend.js
@@ -60,7 +60,7 @@ export function mathJsCalc([num1 = "", num2 = ""], symbol = "+") {
 /**
  * @description: 格式化各种时间格式
  * @param {String} current --当前时间
- * @param {String} dateType --格式化日期格式
+ * @param {String} dateType --格式化日期格式("YYYY-MM-DD HH:mm:ss")
  * @return {String}
  */
  export function dateFormat(current, dateType){
